@@ -18,7 +18,9 @@ javascript: /js/angular/long_collection.js
     <ul class="thumbnails">
       <li class="thumbnail" ng-repeat="person in people">
         <img src="http://placekitten.com/200/300" width="200" height="300" />
-        Hi I'm {{name}} meooww
+        {% raw %}
+        Hi I'm {{person.name}} meooww
+        {% endraw %}
       </li>
     </ul>
   </div>
