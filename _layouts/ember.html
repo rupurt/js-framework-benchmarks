@@ -11,26 +11,14 @@
 
   <script src="//builds.handlebarsjs.com.s3.amazonaws.com/handlebars-latest.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
-  <!-- <script src="//builds.emberjs.com.s3.amazonaws.com/ember-latest.js"></script> -->
-  <script src="/js/ember/ember.js"></script>
+  <script src="//builds.emberjs.com.s3.amazonaws.com/ember-latest.js"></script>
+  <!-- <script src="/js/ember/ember.js"></script> -->
   <script src="/js/ember/ember_console_utils.js"></script>
 
   <script src="{{ page.javascript }}"></script>
 </head>
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="brand" href="/">JS Framework Benchmarks</a>
-        <div class="nav-collapse collapse" id="main-menu">
-          <ul class="nav" id="main-menu-left">
-            <li><a href="/ember">Ember</a></li>
-            <li><a href="/angular">Angular</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% include nav.html %}
 
   <div class="main container">
     {{ content }}

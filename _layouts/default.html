@@ -10,19 +10,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css">
 </head>
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="brand" href="/">JS Framework Benchmarks</a>
-        <div class="nav-collapse collapse" id="main-menu">
-          <ul class="nav" id="main-menu-left">
-            <li><a href="/ember">Ember</a></li>
-            <li><a href="/angular">Angular</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% include nav.html %}
 
   <div class="main container">
     {{ content }}
