@@ -1,0 +1,25 @@
+---
+layout: angular
+title: Angular Long Collection
+javascript: /js/angular/long_collection.js
+---
+
+<h1>{{ page.title }}</h1>
+
+<div id="angular-app" ng-app>
+  <div ng-controller="PeopleController">
+    <fieldset>
+      <label for="num-people">How many people should I render?</label>
+      <input ng-model="numPeople" />
+      <button ng-click="renderPeople()">Render</button>
+    </fieldset>
+    <hr />
+
+    <ul class="thumbnails">
+      <li class="thumbnail" ng-repeat="person in people">
+        <img src="http://placekitten.com/200/300" width="200" height="300" />
+        Hi I'm {{name}} meooww
+      </li>
+    </ul>
+  </div>
+</div>

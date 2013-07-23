@@ -1,0 +1,17 @@
+# This file is managed by chef! Override node.default["git_pairs_authors"] in attributes/git_pairs.rb to modify.
+
+pairs:
+  bk: Brian Kelly; bkelly
+  ak: Alex Kwiatkowski; alexk
+  at: Aaron Triantafyllidis; aaront
+  mc: Michael Chinigo; mchinigo
+  rr: Rick Reilly; rreilly
+  lg: Lisa van Gelder; lvgelder
+  tj: Trevor John; tjohn
+
+email:
+  prefix: pair
+  domain: pivotallabs.com
+
+global: true
+
